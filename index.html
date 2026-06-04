@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LogKal — Informativa sulla Privacy</title>
+<style>
+  :root { --green:#2E8B5C; --ink:#1f2933; --muted:#52606d; --bg:#f7faf8; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); background: var(--bg); margin: 0; line-height: 1.65;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 32px 20px 80px; }
+  header { border-bottom: 3px solid var(--green); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { color: var(--green); margin: 0 0 4px; font-size: 28px; }
+  .updated { color: var(--muted); font-size: 14px; }
+  h2 { color: var(--green); margin-top: 32px; font-size: 20px; }
+  h3 { margin-top: 20px; font-size: 16px; }
+  p, li { color: var(--ink); font-size: 15px; }
+  a { color: var(--green); }
+  code, .email { background: #e8f3ec; padding: 2px 6px; border-radius: 6px; font-size: 14px; }
+  hr { border: none; border-top: 1px solid #d9e2dc; margin: 28px 0; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Informativa sulla Privacy — LogKal</h1>
+  <div class="updated">Ultimo aggiornamento: 4 giugno 2026</div>
+</header>
+
+<p>LogKal (&laquo;l'app&raquo;, &laquo;noi&raquo;) è un'applicazione per il conteggio
+delle calorie e il monitoraggio dell'alimentazione. Questa informativa descrive quali
+dati raccogliamo, come li usiamo e con chi li condividiamo. Usando LogKal accetti le
+pratiche descritte di seguito.</p>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Il titolare del trattamento dei dati è lo sviluppatore di LogKal. Per qualsiasi
+richiesta relativa ai tuoi dati puoi contattarci all'indirizzo:
+<span class="email">gabrielox.work.app@gmail.com</span></p>
+
+<h2>2. Dati che raccogliamo</h2>
+<h3>2.1 Dati dell'account</h3>
+<p>Quando accedi con Google, con email/password, o in modalità anonima, possiamo
+raccogliere e conservare: indirizzo email; nome visualizzato e immagine del profilo
+(se accedi con Google); un identificativo univoco dell'utente generato da Firebase
+Authentication.</p>
+<h3>2.2 Dati di utilizzo dell'app (diario alimentare)</h3>
+<p>Per fornire il servizio conserviamo i dati che inserisci: alimenti e pasti
+registrati, quantità, valori nutrizionali; obiettivi calorici e di macronutrienti;
+peso corporeo, consumo di acqua, promemoria e preferenze. Questi dati sono associati
+al tuo account e sincronizzati nel cloud (Google Firebase Firestore) per permetterti
+di ritrovarli su più dispositivi e di ripristinarli.</p>
+<h3>2.3 Foto dei piatti (funzione &laquo;Analisi AI&raquo;)</h3>
+<p>Quando usi la funzione di riconoscimento del cibo tramite fotocamera: la foto che
+scatti (o selezioni dalla galleria) viene inviata in forma cifrata ai nostri server
+(Google Cloud Functions) e da lì al servizio di intelligenza artificiale Google Gemini
+per stimare gli alimenti e i valori nutrizionali; la foto viene usata
+<strong>esclusivamente</strong> per produrre l'analisi richiesta e
+<strong>non viene conservata</strong> sui nostri server dopo l'elaborazione; la copia
+della foto eventualmente salvata nel diario resta sul tuo dispositivo (e nel tuo spazio
+cloud personale se attivi il backup). Per prevenire abusi e gestire i limiti di
+utilizzo, registriamo un semplice conteggio del numero di analisi effettuate per
+giorno, associato al tuo identificativo utente (senza le immagini).</p>
+<h3>2.4 Dati tecnici, diagnostici e analitici</h3>
+<p>Tramite Firebase Analytics e Firebase Crashlytics raccogliamo dati aggregati e
+diagnostici: modello di dispositivo, versione del sistema operativo, eventi di utilizzo
+anonimi e segnalazioni di crash. Servono a capire come viene usata l'app e a correggere
+i malfunzionamenti.</p>
+<h3>2.5 Pubblicità</h3>
+<p>L'app mostra annunci tramite Google AdMob. Per erogare gli annunci, AdMob può
+raccogliere e utilizzare identificatori del dispositivo (incluso l'ID pubblicità).
+Per maggiori informazioni: <a href="https://policies.google.com/technologies/ads">policy
+pubblicitarie di Google</a>.</p>
+
+<h2>3. Permessi del dispositivo</h2>
+<ul>
+  <li><strong>Fotocamera</strong>: per l'analisi AI dei piatti e la scansione dei codici
+  a barre. Le immagini sono usate solo su tua azione esplicita.</li>
+  <li><strong>Notifiche</strong> (facoltativo): per i promemoria dei pasti.</li>
+  <li><strong>Archiviazione</strong> (facoltativo, solo su Android meno recenti): per
+  salvare ed esportare i backup del diario.</li>
+</ul>
+<p>Non accediamo alla fotocamera o ai file in background.</p>
+
+<h2>4. Finalità del trattamento</h2>
+<p>Trattiamo i tuoi dati per: fornire e mantenere le funzionalità dell'app;
+sincronizzare e ripristinare i tuoi dati tra dispositivi; migliorare stabilità e
+qualità; prevenire abusi e applicare i limiti di utilizzo del servizio AI; mostrare
+annunci.</p>
+
+<h2>5. Condivisione con terze parti</h2>
+<p>Utilizziamo fornitori che trattano dati per nostro conto: Google Firebase
+(Authentication, Firestore, Storage, Cloud Functions, Analytics, Crashlytics); Google
+Gemini API per l'analisi delle immagini; Google AdMob per gli annunci. Non vendiamo i
+tuoi dati personali a terzi.</p>
+
+<h2>6. Conservazione dei dati</h2>
+<p>Conserviamo i dati del tuo account e del diario finché mantieni l'account attivo. Le
+immagini inviate per l'analisi AI non vengono conservate dopo l'elaborazione. Puoi
+richiedere la cancellazione del tuo account e dei dati associati in qualsiasi momento.</p>
+
+<h2>7. Sicurezza</h2>
+<p>I dati sono trasmessi tramite connessioni cifrate (HTTPS) e conservati
+sull'infrastruttura sicura di Google. La chiave di accesso al servizio AI è custodita
+lato server e non è mai inclusa nell'app.</p>
+
+<h2>8. I tuoi diritti</h2>
+<p>In base al GDPR hai diritto a: accedere ai tuoi dati e ottenerne una copia;
+correggere dati inesatti; richiedere la cancellazione dei dati e dell'account; limitare
+o opporti a determinati trattamenti; esportare i tuoi dati (l'app offre una funzione di
+backup/esportazione). Per esercitare questi diritti, contattaci all'indirizzo nella
+sezione 1.</p>
+
+<h2>9. Minori</h2>
+<p>LogKal non è destinata a minori di 14 anni. Non raccogliamo consapevolmente dati di
+minori al di sotto di tale età.</p>
+
+<h2>10. Modifiche</h2>
+<p>Potremmo aggiornare questa informativa nel tempo. Le modifiche rilevanti saranno
+comunicate tramite l'app o aggiornando la data in cima al documento.</p>
+
+<h2>11. Contatti</h2>
+<p>Per domande su questa informativa o sul trattamento dei tuoi dati:
+<span class="email">gabrielox.work.app@gmail.com</span></p>
+
+<hr>
+<footer>© 2026 LogKal. Tutti i diritti riservati.</footer>
+</div>
+</body>
+</html>
