@@ -28,7 +28,7 @@
 <div class="wrap">
 <header>
   <h1>Informativa sulla Privacy — LogKal</h1>
-  <div class="updated">Ultimo aggiornamento: 6 giugno 2026</div>
+  <div class="updated">Ultimo aggiornamento: 2 settembre 2026</div>
 </header>
 
 <p>LogKal (&laquo;l'app&raquo;, &laquo;noi&raquo;) è un'applicazione per il conteggio
@@ -64,18 +64,39 @@ della foto eventualmente salvata nel diario resta sul tuo dispositivo (e nel tuo
 cloud personale se attivi il backup). Per prevenire abusi e gestire i limiti di
 utilizzo, registriamo un semplice conteggio del numero di analisi effettuate per
 giorno, associato al tuo identificativo utente (senza le immagini).</p>
-<h3>2.4 Dati tecnici, diagnostici e analitici</h3>
+<h3>2.4 Testo inviato all'AI (funzioni &laquo;Descrivi&raquo; e &laquo;Componi i pasti&raquo;)</h3>
+<p>Due funzioni mandano del testo, e non delle immagini, allo stesso servizio di
+intelligenza artificiale Google Gemini, sempre passando in forma cifrata dai nostri
+server (Google Cloud Functions). Con <strong>&laquo;Descrivi a parole cosa hai
+mangiato&raquo;</strong> viene inviata la frase che scrivi, per riconoscere gli alimenti
+e le quantità che contiene. Con <strong>&laquo;Componi i pasti con quello che ho in
+casa&raquo;</strong> viene inviato l'elenco degli alimenti della tua dispensa &mdash;
+solo il nome e i valori nutrizionali per 100 g &mdash; insieme alle calorie e ai
+macronutrienti che ti restano per la giornata e alle eventuali preferenze che scrivi;
+il modello risponde indicando quali alimenti usare e in che quantità, mentre
+<strong>le calorie e i macro li calcola l'app sul tuo dispositivo</strong>, dal proprio
+archivio alimenti. In nessuno dei due casi il testo inviato
+<strong>viene conservato</strong> sui nostri server dopo l'elaborazione.</p>
+<p><strong>La dispensa resta sul tuo dispositivo.</strong> L'elenco di cosa hai in casa,
+le tue aggiunte manuali e gli alimenti che segni come finiti sono salvati solo sul
+telefono e <strong>non sono inclusi nel backup cloud</strong>: fanno riferimento
+all'archivio alimenti locale, che su un altro dispositivo indicherebbe cibi diversi.</p>
+<p>Come per le foto, per prevenire abusi e gestire i limiti di utilizzo registriamo un
+semplice conteggio giornaliero delle richieste, associato al tuo identificativo utente
+(senza il testo inviato).</p>
+
+<h3>2.5 Dati tecnici, diagnostici e analitici</h3>
 <p>Tramite Firebase Analytics e Firebase Crashlytics raccogliamo dati aggregati e
 diagnostici: modello di dispositivo, versione del sistema operativo, eventi di utilizzo
 anonimi e segnalazioni di crash. Servono a capire come viene usata l'app e a correggere
 i malfunzionamenti.</p>
-<h3>2.5 Pubblicità</h3>
+<h3>2.6 Pubblicità</h3>
 <p>L'app mostra annunci tramite Google AdMob. Per erogare gli annunci, AdMob può
 raccogliere e utilizzare identificatori del dispositivo (incluso l'ID pubblicità).
 Per maggiori informazioni: <a href="https://policies.google.com/technologies/ads">policy
 pubblicitarie di Google</a>.</p>
 
-<h3>2.6 Health Connect</h3>
+<h3>2.7 Health Connect</h3>
 <p>Se attivi l'integrazione con <strong>Health Connect</strong> (in italiano
 &laquo;Connessione Salute&raquo;) di Android, LogKal può:
 <strong>scrivere</strong> in Health Connect i dati che registri nell'app (peso,
@@ -110,12 +131,14 @@ annunci.</p>
 <h2>5. Condivisione con terze parti</h2>
 <p>Utilizziamo fornitori che trattano dati per nostro conto: Google Firebase
 (Authentication, Firestore, Storage, Cloud Functions, Analytics, Crashlytics); Google
-Gemini API per l'analisi delle immagini; Google AdMob per gli annunci. Non vendiamo i
+Gemini API per l'analisi delle immagini, l'interpretazione delle descrizioni scritte e
+la composizione dei pasti; Google AdMob per gli annunci. Non vendiamo i
 tuoi dati personali a terzi.</p>
 
 <h2>6. Conservazione dei dati</h2>
 <p>Conserviamo i dati del tuo account e del diario finché mantieni l'account attivo. Le
-immagini inviate per l'analisi AI non vengono conservate dopo l'elaborazione. Puoi
+immagini e i testi inviati alle funzioni AI non vengono conservati dopo l'elaborazione.
+La dispensa resta sul tuo dispositivo e viene cancellata disinstallando l'app. Puoi
 richiedere la cancellazione del tuo account e dei dati associati in qualsiasi momento.</p>
 
 <h2>7. Sicurezza</h2>
