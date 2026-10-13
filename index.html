@@ -28,11 +28,12 @@
 <div class="wrap">
 <header>
   <h1>Informativa sulla Privacy — LogKal</h1>
-  <div class="updated">Ultimo aggiornamento: 2 settembre 2026</div>
+  <div class="updated">Ultimo aggiornamento: 13 ottobre 2026</div>
 </header>
 
 <p>LogKal (&laquo;l'app&raquo;, &laquo;noi&raquo;) è un'applicazione per il conteggio
-delle calorie e il monitoraggio dell'alimentazione. Questa informativa descrive quali
+delle calorie e il monitoraggio dell'alimentazione, disponibile per Android e per
+iPhone. Dove le due versioni si comportano in modo diverso è indicato. Questa informativa descrive quali
 dati raccogliamo, come li usiamo e con chi li condividiamo. Usando LogKal accetti le
 pratiche descritte di seguito.</p>
 
@@ -43,7 +44,7 @@ richiesta relativa ai tuoi dati puoi contattarci all'indirizzo:
 
 <h2>2. Dati che raccogliamo</h2>
 <h3>2.1 Dati dell'account</h3>
-<p>Quando accedi con Google, con email/password, o in modalità anonima, possiamo
+<p>Quando accedi con Google (solo su Android), con email/password, o in modalità anonima, possiamo
 raccogliere e conservare: indirizzo email; nome visualizzato e immagine del profilo
 (se accedi con Google); un identificativo univoco dell'utente generato da Firebase
 Authentication.</p>
@@ -86,15 +87,33 @@ semplice conteggio giornaliero delle richieste, associato al tuo identificativo 
 (senza il testo inviato).</p>
 
 <h3>2.5 Dati tecnici, diagnostici e analitici</h3>
-<p>Tramite Firebase Analytics e Firebase Crashlytics raccogliamo dati aggregati e
+<p>Nella versione Android, tramite Firebase Analytics e Firebase Crashlytics raccogliamo dati aggregati e
 diagnostici: modello di dispositivo, versione del sistema operativo, eventi di utilizzo
 anonimi e segnalazioni di crash. Servono a capire come viene usata l'app e a correggere
-i malfunzionamenti.</p>
+i malfunzionamenti. La versione per iPhone non usa questi due servizi.</p>
 <h3>2.6 Pubblicità</h3>
 <p>L'app mostra annunci tramite Google AdMob. Per erogare gli annunci, AdMob può
-raccogliere e utilizzare identificatori del dispositivo (incluso l'ID pubblicità).
+raccogliere e utilizzare identificatori del dispositivo (incluso l'ID pubblicità),
+dati sull'uso degli annunci e una posizione approssimativa ricavata dall'indirizzo IP.
 Per maggiori informazioni: <a href="https://policies.google.com/technologies/ads">policy
 pubblicitarie di Google</a>.</p>
+<p>Nello Spazio economico europeo, prima di mostrare annunci l'app ti chiede il consenso
+alla pubblicità personalizzata; puoi cambiarlo in qualsiasi momento dalle impostazioni
+dell'app (&laquo;Privacy degli annunci&raquo;).</p>
+<p><strong>Su iPhone</strong>, alla prima apertura iOS ti chiede se permettere all'app
+di tracciare la tua attività (&laquo;Consenti tracciamento&raquo;). Se rifiuti,
+l'identificativo pubblicitario del telefono non viene usato e gli annunci non sono
+personalizzati su di esso: l'app funziona allo stesso modo. Puoi cambiare la scelta
+dalle Impostazioni dell'iPhone, in Privacy e sicurezza &rarr; Tracciamento.</p>
+<p>Chi ha un abbonamento <strong>LogKal Pro</strong> attivo non vede annunci.</p>
+
+<h3>2.6-bis Abbonamento LogKal Pro</h3>
+<p>Gli acquisti si fanno con il tuo account Google Play o Apple: <strong>noi non
+riceviamo né conserviamo i dati della tua carta</strong>. Per sapere se l'abbonamento è
+attivo usiamo <strong>RevenueCat</strong>, che riceve dallo store l'identificativo
+dell'acquisto, il prodotto, le date di rinnovo e scadenza, insieme all'identificativo
+utente di LogKal. Sui nostri server conserviamo solo lo stato dell'abbonamento (attivo
+o no) e la sua scadenza.</p>
 
 <h3>2.7 Health Connect</h3>
 <p>Se attivi l'integrazione con <strong>Health Connect</strong> (in italiano
@@ -114,8 +133,12 @@ revocare i permessi in qualsiasi momento dalle impostazioni di Health Connect.</
 
 <h2>3. Permessi del dispositivo</h2>
 <ul>
-  <li><strong>Fotocamera</strong>: per l'analisi AI dei piatti e la scansione dei codici
-  a barre. Le immagini sono usate solo su tua azione esplicita.</li>
+  <li><strong>Fotocamera</strong>: per l'analisi AI dei piatti, la scansione dei codici
+  a barre e la lettura della tabella nutrizionale di un prodotto. Le immagini sono usate
+  solo su tua azione esplicita. La lettura del codice a barre e della tabella
+  nutrizionale avviene <strong>sul telefono</strong>: quelle immagini non vengono
+  inviate.</li>
+  <li><strong>Tracciamento</strong> (solo iPhone, facoltativo): vedi il punto 2.6.</li>
   <li><strong>Notifiche</strong> (facoltativo): per i promemoria dei pasti.</li>
   <li><strong>Archiviazione</strong> (facoltativo, solo su Android meno recenti): per
   salvare ed esportare i backup del diario.</li>
@@ -132,14 +155,20 @@ annunci.</p>
 <p>Utilizziamo fornitori che trattano dati per nostro conto: Google Firebase
 (Authentication, Firestore, Storage, Cloud Functions, Analytics, Crashlytics); Google
 Gemini API per l'analisi delle immagini, l'interpretazione delle descrizioni scritte e
-la composizione dei pasti; Google AdMob per gli annunci. Non vendiamo i
-tuoi dati personali a terzi.</p>
+la composizione dei pasti; Google AdMob per gli annunci; RevenueCat per lo stato
+dell'abbonamento LogKal Pro; Apple (App Store) e Google (Google Play) per il pagamento
+dell'abbonamento. Non vendiamo i tuoi dati personali a terzi.</p>
+<p>Le ricerche di prodotti e di codici a barre vengono inviate a <strong>Open Food
+Facts</strong> (openfoodfacts.org), una banca dati aperta: parte solo il testo cercato o
+il codice, senza alcun dato sul tuo account.</p>
 
 <h2>6. Conservazione dei dati</h2>
 <p>Conserviamo i dati del tuo account e del diario finché mantieni l'account attivo. Le
 immagini e i testi inviati alle funzioni AI non vengono conservati dopo l'elaborazione.
 La dispensa resta sul tuo dispositivo e viene cancellata disinstallando l'app. Puoi
-richiedere la cancellazione del tuo account e dei dati associati in qualsiasi momento.</p>
+cancellare i tuoi dati o eliminare l'account direttamente dall'app (Account &rarr;
+&laquo;Cancella i miei dati&raquo; / &laquo;Elimina l'account&raquo;), oppure chiedercelo
+in qualsiasi momento.</p>
 
 <h2>7. Sicurezza</h2>
 <p>I dati sono trasmessi tramite connessioni cifrate (HTTPS) e conservati
